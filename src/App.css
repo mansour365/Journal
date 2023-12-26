@@ -42,3 +42,25 @@ body{
   align-items: center; /*used to align icon to center vertically*/
   justify-content: center; /*used to align icon to center horizontally*/
 } 
+
+/*When Editing a new card*/
+.edit-card{
+  border: solid red 1px;
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height:95vh;/*make height almost full height of window*/
+  z-index: 100; /*make edit card appear above everything else*/
+  background-color:white;
+}
+.top-date{
+  /*border: solid red 1px;*/
+  display:flex;
+  justify-content: space-between;
+}
