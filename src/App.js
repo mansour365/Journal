@@ -17,7 +17,7 @@ function App() {
       <div id = "addBtn"> <AddBtn /> </div>
 
       {/*map objects from journalData put each object into an instance of Card*/}
-      {entries.map(entry => <Card entryObject = {entry}/> )}
+      {entries.map(entry => <Card entryObj = {entry}/> )}
 
       
     </div>
