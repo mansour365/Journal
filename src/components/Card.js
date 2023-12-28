@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Body from './Body';
 import TodayDate from './TodayDate';
+import EditDateBtn from './EditDateBtn';
 
 function Card(props){
     return (
@@ -22,9 +23,7 @@ function Card(props){
                         <TodayDate />  
                     </div>
 
-                    <span class="material-symbols-outlined" id="more_horiz">
-                        more_horiz
-                    </span>
+                    <EditDateBtn />
                 </div>
 
         </div>
