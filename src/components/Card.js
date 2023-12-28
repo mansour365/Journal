@@ -15,10 +15,16 @@ function Card(props){
                     <Body title={props.entryObj.title} text={props.entryObj.text}/>
                 </div>
 
+                
+
                 <div id = "dateSection">
                     <div id = "date">
                         <TodayDate />  
                     </div>
+
+                    <span class="material-symbols-outlined" id="more_horiz">
+                        more_horiz
+                    </span>
                 </div>
 
         </div>

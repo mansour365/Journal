@@ -12,13 +12,11 @@ h1{
   line-height: 0.8;
 }
 
-p{
-  font-size:16px;
-}
+
 
 /*Main app title*/
 #title{
-  font-size: 30px;
+  font-size: 34px;
   font-weight: 600;
   padding-top: 50px;
   padding-bottom:30px;
@@ -26,14 +24,21 @@ p{
   /*border: solid red 1px;*/
 }
 
+/*Google Material Icons*/
 .material-symbols-outlined {
-  font-size:35px;
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
   'opsz' 24
 }
+#more_horiz{
+  font-size:23px;
+  color: rgb(152, 152, 152);
+  padding-right:13px;
+  cursor: pointer;
+}
+
 
 .addBtn{
   position:fixed;
@@ -67,7 +72,7 @@ p{
 .card{
   display: flex; /*flexbox mode*/
   flex-direction: column; /*flex in direction vertically*/
-  justify-content: space-between; 
+  justify-content: flex-start; 
   margin: auto; /*center the card*/
   background-color: rgb(255, 255, 255);
 
@@ -81,7 +86,7 @@ p{
   border-radius: max(0px, min(12px, (100% - 200px + 1px) * 9999)) / 12px;
 }
 .image-section{
-  height: 48%;
+  height: 162px;
   /*border: solid rgb(20, 63, 164) 1px;*/
 
   /*Keeps image centered in image section*/
@@ -99,42 +104,58 @@ p{
   flex-shrink:0;
   width:100%;
   min-height:100%;
-  
 }
 .text-section{
-  max-height: 34%;
+  height: 120px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   /*border: solid rgb(114, 114, 114) 1px;*/
 }
 .text-title{
-  height:25%;
-  padding-left:8px;
-  padding-right:8px;
-  border: solid rgb(205, 1, 1) 1px;
+  height:30px;
+  padding: 16px 16px 0px;  /*top, right-left, bottom*/
+
+
+  font-size: 17px;
+  font-weight:500;
+  line-height: 0.8;
+
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  /*border: solid rgb(205, 1, 1) 1px;*/
 }
 .text-body{
-  height:75%;
-  padding-left: 8px;
-  padding-right: 8px;
+  height:65px;
+  font-size: 16px;
+  line-height: 21px;
+  
+  padding-left: 16px;
+  padding-right: 16px;
  
   overflow:hidden;
-  /*white-space: nowrap;*/
-  text-overflow: ellipsis;
   
-  border: solid rgb(12, 179, 40) 1px;
+  /*border: solid rgb(12, 179, 40) 1px;*/
 }
 #dateSection{
-  height: 12%;
-  font-size: 11px;
-  border: solid rgb(255, 38, 0) 1px;
+  height: 35px;
+  width:97%;
+  margin:auto;
+  margin-top:5px;
+
   display:flex;
+  justify-content: space-between;
   align-items:center; /*allign items in the date section to be vertically centered*/
+
+  font-size: 12px;
+  border-top: solid 2px rgb(234, 234, 234);
+  /*border: solid rgb(255, 38, 0) 1px;*/
 }
 #date{
   /*border: solid rgb(124, 124, 124) 1px;*/
-  padding-left: 15px;
+  padding-left: 13px;
   color: rgb(152, 152, 152);
 }
 

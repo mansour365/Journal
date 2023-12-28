@@ -4,11 +4,11 @@ function Body(props){
     return(
         <>
             <div class = "text-title">
-                <h1>{props.title}</h1>
+                <>{props.title}</>
             </div>
 
             <div class = "text-body">
-                <p>{props.text}</p>
+                <>{props.text}</>
             </div>
         </>
     );

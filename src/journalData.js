@@ -7,7 +7,7 @@ export const entries = [
     },
     {
         journalImg: "https://images.unsplash.com/photo-1615751072497-5f5169febe17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80",
-        title: "Dreamt of getting a pet dog",
+        title: "Dreamt of getting a pet dog with extra long title",
         text: "last night I had a strange dream where I got a pet dog. I wonder why my subconsious created this scenerio. Come to think of it where do dreams come from anyways?"
     },
     {
