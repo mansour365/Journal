@@ -6,19 +6,21 @@ body{
   background-color: rgb(249, 245, 244);
 }
 
-h1{
-  font-size: 16px;
-  font-weight:500;
-  line-height: 0.8;
-}
 
+.title-section{
+  display:flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom:30px;
+  border: solid 1px red;
+}
 
 
 /*Main app title*/
 #title{
   font-size: 34px;
   font-weight: 600;
-  padding-top: 50px;
+  /*padding-top: 50px;
   padding-bottom:30px;
   padding-left: 20px;
   /*border: solid red 1px;*/
@@ -37,6 +39,15 @@ h1{
   color: rgb(152, 152, 152);
   padding-right:13px;
   cursor: pointer;
+}
+#filter_list{
+  font-size:23px;   /*size of icon*/
+  color: rgb(0, 0, 0);  /*color of icon*/
+  padding: 3px; /*padding around icon*/
+  border-radius: 50%; /*make into a circle*/
+  background-color: rgb(230, 226, 225);
+  cursor: pointer;
+  /*border: solid 1px blue;*/
 }
 
 
