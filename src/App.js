@@ -18,13 +18,11 @@ function App() {
         <FilterBtn />
       </div>
       
-      
-      <div id = "addBtn"> <AddBtn /> </div>
+      <AddBtn />
 
       {/*map objects from journalData put each object into an instance of Card*/}
       {entries.map(entry => <Card entryObj = {entry}/> )}
 
-      
     </div>
   );
 }
