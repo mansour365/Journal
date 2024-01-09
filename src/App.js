@@ -7,6 +7,7 @@ import {entries} from './journalData';
 import AddBtn from './components/AddBtn';
 import Card from './components/Card';
 import FilterBtn from './components/FilterBtn';
+import NewEntry from './components/NewEntry';
 
 
 function App() {
@@ -17,7 +18,9 @@ function App() {
         <div id="title">Journal</div>
         <FilterBtn />
       </div>
-      
+
+      <NewEntry />
+
       <AddBtn />
 
       {/*map objects from journalData put each object into an instance of Card*/}
