@@ -52,25 +52,40 @@ body{
 
 
 .new-entry{
-  background-color: brown;
+  background-color: rgb(255, 255, 255);
   width:80%;
-  margin:auto;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:auto;
+  margin-bottom: 20px;
+  padding: 10px;
+
+  /* The Fab Four Technique (for dynamic border radius) */
+  /* Effect disappears at "200px" or less, "12px" = desired pixel radius */
+  border-radius: max(0px, min(12px, (100% - 200px + 1px) * 9999)) / 12px;
+
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
 
 
 
 .header{
   width:100%;
-  border: solid 1px green;
+  /*border: solid 1px green;*/
   margin:auto;
   display: flex;
   justify-content: space-between;
 }
 
+.header-date{
+  font-weight: 500;
+  font-size: ;
+}
+
 .entry-content{
   width:100%;
   margin: auto;
-  border: solid 1px red;
+  /*border: solid 1px red;*/
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -247,3 +262,7 @@ body{
   display:flex;
   justify-content: space-between;
 }
+
+
+/*Design style*/
+/* https://www.macstories.net/reviews/apples-journal-app-journaling-for-all/ */

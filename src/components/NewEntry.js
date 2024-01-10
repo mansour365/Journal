@@ -12,18 +12,18 @@ export default function NewEntry(){
         <div class = "new-entry">
             <div class = "header">
                 <BookmarkBtn/>
-                <TodayDate />
+                <div class = "header-date"><TodayDate /></div>
                 <button>Done</button>
             </div>
 
             <div class="entry-content">
 
                 <input 
-                class = "entry-title"
-                value = {entry.title}
-                name = "title"
-                type = "text"
-                placeholder = "Journal Title"
+                    class = "entry-title"
+                    value = {entry.title}
+                    name = "title"
+                    type = "text"
+                    placeholder = "Journal Title"
                 />
 
                 <textarea
