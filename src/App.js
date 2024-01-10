@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
 
-      <div class = "title-section">
+      <div className = "title-section">
         <div id="title">Journal</div>
         <FilterBtn />
       </div>

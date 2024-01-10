@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import TodayDate from "./TodayDate";
 import BookmarkBtn from "./BookmarkBtn";
+import { entries } from "../journalData";
 
 
 
@@ -14,20 +15,20 @@ export default function NewEntry(){
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        alert("need to transfer this new object data to the array in the journalData.js file");
+        entries.push(entry);
     }
 
 
     return(
-        <div class = "new-entry">
+        <div className = "new-entry">
 
-            <div class = "header">
+            <div className = "header">
                 <BookmarkBtn/>
-                <div class = "header-date"><TodayDate /></div>
+                <div className = "header-date"><TodayDate /></div>
                 <button onClick={handleSubmit}>Done</button>
             </div>
 
-            <div class="entry-content">
+            <div className="entry-content">
 
                 <input 
                     value = {entry.title}
@@ -35,7 +36,7 @@ export default function NewEntry(){
                     type = "text"
                     placeholder = "Journal Title"
                     onChange={handleChange}
-                    class = "entry-title"
+                    className = "entry-title"
                 />
 
                 <textarea
@@ -44,7 +45,7 @@ export default function NewEntry(){
                     type = "text"
                     placeholder = "Start writing..."
                     onChange={handleChange}
-                    class="body-class"
+                    className="body-class"
                 />
                
             </div>

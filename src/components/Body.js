@@ -3,11 +3,11 @@ import React from 'react';
 function Body(props){
     return(
         <>
-            <div class = "text-title">
+            <div className = "text-title">
                 <>{props.title}</>
             </div>
 
-            <div class = "text-body">
+            <div className = "text-body">
                 <>{props.text}</>
             </div>
         </>
