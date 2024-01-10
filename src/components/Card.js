@@ -13,7 +13,7 @@ function Card(props){
                 </div>
 
                 <div className = "text-section">
-                    <Body title={props.entryObj.title} text={props.entryObj.text}/>
+                    <Body title={props.entryObj.title} text={props.entryObj.body}/>
                 </div>
 
                 
