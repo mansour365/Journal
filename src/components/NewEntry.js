@@ -2,8 +2,11 @@ import React, {useState} from "react";
 import TodayDate from "./TodayDate";
 import BookmarkBtn from "./BookmarkBtn";
 
+/*Experimental*/
+import {entries} from '../journalData';
+
 export default function NewEntry(){
-    const [entry, setEntry] = useState({}); //default value is empty object
+    const [entry, setEntry] = useState([entries]); //default value is empty object
 
 
 

@@ -20,7 +20,7 @@ function Card(props){
 
                 <div id = "dateSection">
                     <div id = "date">
-                        <TodayDate />  
+                        {props.entryObj.date}  
                     </div>
 
                     <EditDateBtn />
