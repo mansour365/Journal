@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Header(props){
+function CardImg(props){
     return (
         <>
             <img src={props.journalImg}></img>
@@ -9,4 +9,4 @@ function Header(props){
 
 }
 
-export default Header;
+export default CardImg;

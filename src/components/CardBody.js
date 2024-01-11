@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Body(props){
+function CardBody(props){
     return(
         <>
             <div className = "text-title">
@@ -14,4 +14,4 @@ function Body(props){
     );
 }
 
-export default Body;
+export default CardBody;
