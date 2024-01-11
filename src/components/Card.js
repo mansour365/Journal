@@ -1,8 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Body from './Body';
-import TodayDate from './TodayDate';
-import EditDateBtn from './EditDateBtn';
+import EditDateBtn from './buttons/EditDateBtn';
 
 function Card(props){
     return (

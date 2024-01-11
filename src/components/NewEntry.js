@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import TodayDate from "./TodayDate";
-import BookmarkBtn from "./BookmarkBtn";
+import BookmarkBtn from "./buttons/BookmarkBtn";
 import { entries } from "../journalData";
 
 

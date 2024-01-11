@@ -1,7 +1,7 @@
 import React from 'react';
-import BookmarkBtn from './BookmarkBtn';
+import BookmarkBtn from './buttons/BookmarkBtn';
 import TodayDate from './TodayDate';
-import DoneBtn from './DoneBtn';
+import DoneBtn from './buttons/DoneBtn';
 
 function CreateCard(){
     return (<div className = "edit-card">  

@@ -1,13 +1,12 @@
 import React from 'react';
+
 /*Import the css*/
 import './App.css';
-/*Import the array of Journal data*/
-import {entries} from './journalData';
+
 /*Import components*/
-import AddBtn from './components/AddBtn';
-import Card from './components/Card';
-import FilterBtn from './components/FilterBtn';
+import FilterBtn from './components/buttons/FilterBtn';
 import NewEntry from './components/NewEntry';
+import DisplayCards from './components/DisplayCards';
 
 
 function App() {
@@ -21,10 +20,7 @@ function App() {
 
       <NewEntry />
 
-      <AddBtn />
-
-      {/*map objects from journalData put each object into an instance of Card*/}
-      {entries.map(entry => <Card entryObj = {entry}/> )}
+      <DisplayCards />
 
     </div>
   );
