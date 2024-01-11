@@ -1,6 +1,8 @@
 import React, {useState} from "react";
-import TodayDate from "./TodayDate";
+
 import BookmarkBtn from "./buttons/BookmarkBtn";
+
+import TodayDate from "./TodayDate";
 import { entries } from "../journalData";
 
 
@@ -9,8 +11,8 @@ export default function NewEntry(){
     const [entry, setEntry] = useState({}); //default value is empty object
 
     const handleChange = ({target}) => {
-        const {key, value} = target;
-        setEntry(prev => ({...prev, [key]: value}));
+        const {name, value} = target;
+        setEntry(prev => ({...prev, [name]: value}));
     };
 
     const handleSubmit = (event) => {
