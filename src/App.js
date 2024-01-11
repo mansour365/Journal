@@ -1,15 +1,37 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 /*Import the css*/
 import './App.css';
 
 /*Import components*/
 import FilterBtn from './components/buttons/FilterBtn';
-import NewEntry from './components/NewEntry';
-import DisplayCards from './components/DisplayCards';
+import NewTask from './components/NewTask';
+import TasksList from './components/TasksList';
 
 
-function App() {
+export default function App() {
+
+  //Create an array of objects
+
+
+  
+
+  const [newTask, setNewTask] = useState({});
+
+  const handleChange = ({target}) =>{
+    const {name, value} = target;
+    setNewTask((prev)=>({...prev, id: Date.now(), [name]:value}));
+  };
+
+  const [allTasks, setAllTasks] = useState([]);
+  
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setAllTasks((prev) => [newTask, ...prev]);
+    setNewTask({});
+  }
+
   return (
     <div className="App">
 
@@ -18,12 +40,16 @@ function App() {
         <FilterBtn />
       </div>
 
-      <NewEntry />
+      <NewTask 
+        newTask={newTask}
+        handleChange={handleChange}
+        handleSubmit={handleSubmit}
+      />
 
-      <DisplayCards />
+      <TasksList allTasks={allTasks} />
 
     </div>
   );
 }
 
-export default App;
+
