@@ -9,6 +9,9 @@ import { entries } from "../journalData";
 
 export default function NewTask({newTask, handleChange, handleSubmit}){
 
+    /*Give entry the current date*/
+    newTask.date = <TodayDate />
+
     return(
         <form onSubmit={handleSubmit} className = "new-entry">
 
@@ -33,8 +36,12 @@ export default function NewTask({newTask, handleChange, handleSubmit}){
                     value = {newTask.body || ""}
                     onChange={handleChange}
                 />
+
+                
                
             </div>
         </form>
+        
+        
     );
 }

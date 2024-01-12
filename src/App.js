@@ -11,21 +11,15 @@ import TasksList from './components/TasksList';
 
 export default function App() {
 
-  //Create an array of objects
-
-
-  
-
-  const [newTask, setNewTask] = useState({});
+  const [newTask, setNewTask] = useState({});     //an object called newtask
 
   const handleChange = ({target}) =>{
     const {name, value} = target;
     setNewTask((prev)=>({...prev, id: Date.now(), [name]:value}));
   };
 
-  const [allTasks, setAllTasks] = useState([]);
+  const [allTasks, setAllTasks] = useState([]);   //an array called allTasks
   
-
   const handleSubmit = (event) => {
     event.preventDefault();
     setAllTasks((prev) => [newTask, ...prev]);
@@ -40,11 +34,7 @@ export default function App() {
         <FilterBtn />
       </div>
 
-      <NewTask 
-        newTask={newTask}
-        handleChange={handleChange}
-        handleSubmit={handleSubmit}
-      />
+      <NewTask newTask={newTask} handleChange={handleChange} handleSubmit={handleSubmit}/>
 
       <TasksList allTasks={allTasks} />
 

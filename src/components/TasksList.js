@@ -4,10 +4,10 @@ import EditDateBtn from './buttons/EditDateBtn';
 import {entries} from '../journalData';
 import Card from './Card';
 
-export default function DisplayCards({allTasks}){
+export default function TasksList({allTasks}){
     return(
         <>
-            {allTasks.map(({title, body, id})=> (
+            {allTasks.map(({title, body, date, id})=> (
 
                 <div className = "card" key={id}>
 
@@ -27,7 +27,7 @@ export default function DisplayCards({allTasks}){
 
                     <div id = "dateSection">
                         <div id = "date">
-                            
+                            {date}
                         </div>
 
                         <EditDateBtn />
