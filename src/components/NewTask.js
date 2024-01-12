@@ -37,8 +37,6 @@ export default function NewTask({newTask, handleChange, handleSubmit}){
                     onChange={handleChange}
                 />
 
-                
-               
             </div>
         </form>
         
