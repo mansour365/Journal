@@ -3,15 +3,17 @@ import EditDateBtn from './buttons/EditDateBtn';
 /*Import the array of Journal data*/
 import {entries} from '../journalData';
 import Card from './Card';
+import CardImg from './CardImg';
 
 export default function TasksList({allTasks}){
     return(
         <>
-            {allTasks.map(({title, body, date, id})=> (
+            {allTasks.map(({journalImg, title, body, date, id})=> (
 
                 <div className = "card" key={id}>
 
                     <div className = "image-section">
+                        <img src={journalImg}></img>
                     </div>
 
 
