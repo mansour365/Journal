@@ -37,6 +37,14 @@ export default function App() {
         <FilterBtn />
       </div>
 
+      {/*Need to check json file, convert to array "saved entries" */}
+      
+      {/*Start by creating a json file with the information contained in savedentries*/}
+      {/*using javascript convert json to array*/}
+      {/*display the array*/}
+
+      {/* when new task is made, add it to saved entries array, then convert the saved entries array to json file*/}
+
       {/*Takes 3 arguments, the current task object, handleChange() and handleSubmit() */}
       <NewTask newTask={newTask} handleChange={handleChange} handleSubmit={handleSubmit}/>
 
