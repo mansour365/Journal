@@ -1,5 +1,3 @@
-
-export const savedEntries = [
     {
         title: "Meeting a cat on my way to work This is also a really long title just so you know",
         body: "Today I met a cat on my way to work. THis cat seems to follow me everywhere i go these days. I wonder if it's lost. This is also a really long body just so you know.",
@@ -20,4 +18,3 @@ export const savedEntries = [
         body: "some description",
         date: "Thursday, Nov 1 2023"
     }
-]
