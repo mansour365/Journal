@@ -8,8 +8,9 @@ import FilterBtn from './components/buttons/FilterBtn';
 import NewTask from './components/NewTask';
 import TasksList from './components/TasksList';
 
-/*Import previously saved array of object*/
+/*Import previously saved array of object*/ /*Maybe change to database data in future*/
 import { savedEntries } from './journalData';
+//Take imported data and copy to an array?
 
 
 export default function App() {
