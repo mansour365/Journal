@@ -30,6 +30,10 @@ export default function App() {
     setNewTask({}); //Empty the current task object
   }
 
+  
+
+
+
   return (
     <div className="App">
 

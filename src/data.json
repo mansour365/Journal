@@ -1,20 +1,23 @@
-    {
-        title: "Meeting a cat on my way to work This is also a really long title just so you know",
-        body: "Today I met a cat on my way to work. THis cat seems to follow me everywhere i go these days. I wonder if it's lost. This is also a really long body just so you know.",
-        date: "Sunday, Nov 4 2023"
-    },
-    {
-        title: "Dreamt of getting a pet dog",
-        body: "last night I had a strange dream where I got a pet dog. I wonder why my subconsious created this scenerio. Come to think of it where do dreams come from anyways?",
-        date: "Saturday, Nov 3 2023"
-    },
-    {
-        title: "Zoo",
-        body: "was at the zoo",
-        date: "Friday, Nov 2 2023"
-    },
-    {
-        title: "journal with no image",
-        body: "some description",
-        date: "Thursday, Nov 1 2023"
-    }
+
+    [
+        {
+            "title": "The JSON is working!!! Meeting a cat on my way to work This is also a really long title just so you know",
+            "body": "Today I met a cat on my way to work. THis cat seems to follow me everywhere i go these days. I wonder if it's lost. This is also a really long body just so you know.",
+            "date": "Sunday, Nov 4 2023"
+        },
+        {
+            "title": "The JSON is working !!!  Dreamt of getting a pet dog",
+            "body": "last night I had a strange dream where I got a pet dog. I wonder why my subconsious created this scenerio. Come to think of it where do dreams come from anyways?",
+            "date": "Saturday, Nov 3 2023"
+        },
+        {
+            "title": "Zoo",
+            "body": "was at the zoo",
+            "date": "Friday, Nov 2 2023"
+        },
+        {
+            "title": "journal with no image",
+            "body": "some description",
+            "date": "Thursday, Nov 1 2023"
+        }
+    ]

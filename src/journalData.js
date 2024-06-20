@@ -7,7 +7,7 @@ export const savedEntries = [
     },
     {
         title: "Dreamt of getting a pet dog",
-        body: "last night I had a strange dream where I got a pet dog. I wonder why my subconsious created this scenerio. Come to think of it where do dreams come from anyways?",
+        body: "last night I had a strange dream where I got a pet dog. I wonder why my subconsious created this scenerio. Come to think of it where do dreams come from anyways? the feather fell from the tree, whay did the tree have feathers instead of leaves. the acorn fell from the bird.",
         date: "Saturday, Nov 3 2023"
     },
     {
