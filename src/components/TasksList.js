@@ -1,8 +1,6 @@
 import React from 'react';
 import EditDateBtn from './buttons/EditDateBtn';
-/*Import the array of Journal data*/
-import {entries} from '../journalData';
-import Card from './Card';
+
 
 export default function TasksList({allTasks}){
     return(
